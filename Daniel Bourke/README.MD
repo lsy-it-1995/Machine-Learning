@@ -73,6 +73,7 @@ def plot_decision_boundary(model, X, y):
   plt.ylim(yy.min(), yy.max())
 ```
 
+<hr />
 
 [Machine activation cheatsheet](https://ml-cheatsheet.readthedocs.io/en/latest/activation_functions.html)
 * linear
