@@ -16,8 +16,8 @@ adding mulitple hidden layers
 
 SGD(), Adam() with learning rate(lr)
 
-
-## For binary model
+<hr>
+# For binary model
 ```
 model = tf.keras.Sequential([
 	tf.keras.layers.Dense(100, activiation="relu"),
@@ -34,7 +34,7 @@ model.fit(X, y, epoch=100)
 	* hidden layers: "relu"(Rectified Linear Unit)
 	* output: "sigmoid"
 
-# non-linear 
+## non-linear 
 ```
 def relu(x):
   return tf.maximum(0, x)
@@ -45,6 +45,7 @@ def sigmoid(x):
 loss="binary_crosentropy"=tf.keras.losses.BinaryCrossentropy()
 
 
+<hr>
 # plot for model
 ```
 def plot_decision_boundary(model, X, y):
