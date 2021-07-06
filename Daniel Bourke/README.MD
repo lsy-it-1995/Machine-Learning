@@ -35,6 +35,15 @@ model.fit(X, y, epoch=100)
 	* hidden layers: "relu"(Rectified Linear Unit)
 	* output: "sigmoid"
 
+[Machine activation cheatsheet](https://ml-cheatsheet.readthedocs.io/en/latest/activation_functions.html)
+* linear
+* elu
+* relu
+* leakyrelu
+* sigmoid
+* tanh
+* softmax
+
 ## non-linear 
 ```
 def relu(x):
@@ -73,13 +82,20 @@ def plot_decision_boundary(model, X, y):
   plt.ylim(yy.min(), yy.max())
 ```
 
-<hr />
+# Visualize
+plt on the model
+if the loss going down and the accuracy going up, this means the model is improving
+```
+history = model.fit(X,y, epochs=...)
+pd.DataFrame(history.history).plot()
+```
 
-[Machine activation cheatsheet](https://ml-cheatsheet.readthedocs.io/en/latest/activation_functions.html)
-* linear
-* elu
-* relu
-* leakyrelu
-* sigmoid
-* tanh
-* softmax
+# learning rate scheduler
+before you fit, declare your learning rate callbacks
+```
+lr_scheduler=tf.keras.callbacks.LearningRateScheduler(lambda epoch: 1e-4* 10**(epoch/20))
+history_9 = model_9.fit(X_train, y_train, epochs=100, callbacks=[lr_scheduler])
+```
+Find the best loss on learning rate based on plt.figure
+
+<hr />
