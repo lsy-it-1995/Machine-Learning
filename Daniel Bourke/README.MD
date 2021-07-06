@@ -75,3 +75,10 @@ def plot_decision_boundary(model, X, y):
 
 
 [Machine activation cheatsheet](https://ml-cheatsheet.readthedocs.io/en/latest/activation_functions.html)
+* linear
+* elu
+* relu
+* leakyrelu
+* sigmoid
+* tanh
+* softmax
