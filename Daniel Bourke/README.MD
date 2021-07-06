@@ -17,6 +17,7 @@ adding mulitple hidden layers
 SGD(), Adam() with learning rate(lr)
 
 <hr>
+
 # For binary model
 ```
 model = tf.keras.Sequential([
@@ -46,6 +47,7 @@ loss="binary_crosentropy"=tf.keras.losses.BinaryCrossentropy()
 
 
 <hr>
+
 # plot for model
 ```
 def plot_decision_boundary(model, X, y):
