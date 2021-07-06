@@ -30,8 +30,8 @@ model.compile(loss="binary_crosentropy,
 model.fit(X, y, epoch=100)
 ```
 
-*activiation: 
-	*hidden layers: "relu"
-	*output: "sigmoid"
+* activiation: 
+	* hidden layers: "relu"
+	* output: "sigmoid"
 	
 loss="binary_crosentropy"=tf.keras.losses.BinaryCrossentropy()
