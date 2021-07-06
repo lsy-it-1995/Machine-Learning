@@ -16,7 +16,7 @@ adding mulitple hidden layers
 
 SGD(), Adam() with learning rate(lr)
 
-<hr>
+<hr />
 
 # For binary model
 ```
@@ -46,7 +46,7 @@ def sigmoid(x):
 loss="binary_crosentropy"=tf.keras.losses.BinaryCrossentropy()
 
 
-<hr>
+<hr />
 
 # plot for model
 ```
