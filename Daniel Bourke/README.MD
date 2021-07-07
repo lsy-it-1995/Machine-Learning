@@ -99,3 +99,16 @@ history_9 = model_9.fit(X_train, y_train, epochs=100, callbacks=[lr_scheduler])
 Find the best loss on learning rate based on plt.figure
 
 <hr />
+
+# Classification evaluation methods
+* Metric
+	* Accuracy
+		* default metric for classification problems. Not the best for imbalanced classes
+	* Precision
+		* higher precision leads to less false positives
+	* Recall
+		* higher recall leads to less false negative
+	* F1-score
+		* combination of precision and recall, usually a good overall metric for a classification model
+	* Confusion matrix
+		* when comparing predictions to truth labels to see where model gets confused. Can be hard to use with large numbers of classes
