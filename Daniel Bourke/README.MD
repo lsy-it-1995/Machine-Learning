@@ -112,3 +112,13 @@ Find the best loss on learning rate based on plt.figure
 		* combination of precision and recall, usually a good overall metric for a classification model
 	* Confusion matrix
 		* when comparing predictions to truth labels to see where model gets confused. Can be hard to use with large numbers of classes
+
+# Mulitclass classification
+
+similar architecture to the binary classifiers, but slightly different
+* input shape
+* output shape
+* loss function = tf.keras.losses.CategoricalCrossentropy()
+	* if labels are one-hot encoded, use CategoricalCrossentropy
+	* if labels are integer, use SparseCategoricalCrossentropy
+* output layer activation = softmax
